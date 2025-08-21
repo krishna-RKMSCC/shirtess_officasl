@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shirtess_Offical</title>
+  <style>
+    /* Base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f9fc;
+    color: #222;
+  }
+  
+  header {
+    text-align: center;
+    background: #0066ff;
+    color: white;
+    padding: 2rem 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header p {
+    margin-top: .5rem;
+  }
+  
+  /* Gallery */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .offer{
+    height: 400px;
+    width: 800px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    margin-left: 600px;
+    background-image: url(offer.png);
+    background-size: cover;
+  }
+  .gallery1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 2rem;
+  }
+
+  #logo1{
+    background-image: url(Krishna.jpeg);
+    background-size: cover;
+  }
+
+  #logo2{
+    background-image: url(Rupam.jpeg);
+    background-size: cover;
+  }
+
+  .logo{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .card1 {
+    background: #88dbd0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 200px;
+    width: 500px;
+    margin-left: 100px;
+  }
+
+  .detals{
+    color: black;
+  }
+  
+  pre{
+    font-size: 15px;
+    font-family: Copperplate Gothic Bold;
+  }
+  
+  .card {
+    background: #fcf803;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card h2 {
+    margin: .8rem 0 .3rem;
+    font-size: 1.2rem;
+  }
+  
+  .card .price {
+    color: #0066ff;
+    font-weight: bold;
+    margin: 0.3rem 0;
+  }
+  
+  .card .desc {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  #d1{
+    display: inline-;
+  }
+  
+  /* Pricing Table */
+  #s1{
+    background:linear-gradient(#00d10e, #7aff83);
+    font-size: 20px;
+  }
+
+  #s2{
+    background:linear-gradient(#edb94a, #ffd986);
+    font-size: 20px;
+  }
+
+  #s3{
+    background:linear-gradient(#e046a0, #fac1e2);
+    font-size: 20px;
+  }
+
+  #s4{
+    background:linear-gradient(#45edaa, #a1f0d0);
+    font-size: 20px;
+  }
+
+  #s5{
+    background:linear-gradient(#4f5ee8, #dbdfff);
+    font-size: 20px;
+  }
+
+  #s6{
+    background:linear-gradient(#eb4b5e, #f5aeb6);
+    font-size: 20px;
+  }
+  
+  .pricing {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+
+  .price1{
+    color: #222;
+  }
+  
+  .pricing h2 {
+    margin-bottom: 2rem;
+    font-family: Arial Black;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: #fff;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+  }
+  
+  th {
+    background: #0066ff;
+    color: white;
+  }
+  
+  td {
+    background: #f9f9f9;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #222;
+    color: #ddd;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 800px){
+    /* Base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f9fc;
+    color: #222;
+  }
+  
+  header {
+    text-align: center;
+    background: #0066ff;
+    color: white;
+    padding: 2rem 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header p {
+    margin-top: .5rem;
+  }
+  
+  /* Gallery */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .offer{
+    height: 150px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 25px;
+    background-image: url(offer.png);
+    background-size: cover;
+  }
+  .gallery1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 2rem;
+  }
+
+  #logo1{
+    background-image: url(Krishna.jpeg);
+    background-size: cover;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  #logo2{
+    background-image: url(Rupam.jpeg);
+    background-size: cover;
+  }
+
+  .logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  .card1 {
+    background: #88dbd0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 150px;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .detals{
+    color: black;
+  }
+  
+  pre{
+    font-size: 15px;
+    font-family: Copperplate Gothic Bold;
+    font-size: 11px;
+  }
+  
+  .card {
+    background: #fcf803;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card h2 {
+    margin: .8rem 0 .3rem;
+    font-size: 1.2rem;
+  }
+  
+  .card .price {
+    color: #0066ff;
+    font-weight: bold;
+    margin: 0.3rem 0;
+  }
+  
+  .card .desc {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  #d1{
+    display: inline-;
+  }
+  
+  /* Pricing Table */
+  #s1{
+    background:linear-gradient(#00d10e, #7aff83);
+    font-size: 20px;
+  }
+
+  #s2{
+    background:linear-gradient(#edb94a, #ffd986);
+    font-size: 20px;
+  }
+
+  #s3{
+    background:linear-gradient(#e046a0, #fac1e2);
+    font-size: 20px;
+  }
+
+  #s4{
+    background:linear-gradient(#45edaa, #a1f0d0);
+    font-size: 20px;
+  }
+
+  #s5{
+    background:linear-gradient(#4f5ee8, #dbdfff);
+    font-size: 20px;
+  }
+
+  #s6{
+    background:linear-gradient(#eb4b5e, #f5aeb6);
+    font-size: 20px;
+  }
+  
+  .pricing {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+
+  .price1{
+    color: #222;
+  }
+  
+  .pricing h2 {
+    margin-bottom: 2rem;
+    font-family: Arial Black;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: #fff;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+  }
+  
+  th {
+    background: #0066ff;
+    color: white;
+  }
+  
+  td {
+    background: #f9f9f9;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #222;
+    color: #ddd;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🛍 Shirtess_Offical</h1>
+    <p>Premium Designs with Transparent Prices</p>
+  </header>
+
+<div class="offer">
+
+</div>
+
+  <!-- Gallery -->
+  <main class="gallery">
+    <div class="card">
+      <img src="Mockup n.avif" alt="Minimal T-shirt">
+      <h2>Normal True bio wash Rneck</h2>
+      <p class="price">₹339</p>
+      <p class="desc">100% Cotton</p>
+    </div>
+
+    <div class="card">
+      <img src="Mockup 210.avif" alt="Retro Sunset T-shirt">
+      <h2>Over Size 210gsm</h2>
+      <p class="price">₹389</p>
+      <p class="desc">Vibrant Print</p>
+    </div>
+
+    <div class="card">
+      <img src="Mockup o240.jpg" alt="Sports T-shirt">
+      <h2>Over Size 240gsm</h2>
+      <p class="price">₹425</p>
+      <p class="desc">Breathable Fabric</p>
+    </div>
+
+    <div class="card">
+      <img src="Mockup p.jpg" alt="Typography T-shirt">
+      <h2>Pollo</h2>
+      <p class="price">₹449</p>
+      <p class="desc">Trendy Text Print </p>
+    </div>
+
+    <div class="card">
+      <img src="Mockup f.jpg" alt="Typography T-shirt">
+      <h2>Full T-Shirt</h2>
+      <p class="price">₹369</p>
+      <p class="desc">Trendy Text Print</p>
+    </div>
+
+    <div class="card">
+      <img src="Mockup b.jpeg" alt="Typography T-shirt">
+      <h2>Baggy T-Shirt</h2>
+      <p class="price">₹685</p>
+      <p class="desc">Trendy Text Print </p>
+    </div>
+
+    <div class="card">
+      <img src="Mockup a.avif" alt="Typography T-shirt">
+      <h2>Acid wash OS</h2>
+      <p class="price">₹425</p>
+      <p class="desc">Trendy Text Print</p>
+    </div>
+  </main>
+  <hr>
+ <!-- Normal True bio wash Rneck -->
+  <section class="pricing" id="s1">
+  <ul><b><li><u><h2>Normal True bio wash Rneck</h2></li></u></b></ul>
+    <table>
+      <tr>
+        <th>Colour</th>
+        <th>Size</th>
+      </tr>
+      <tr>
+        <td>
+          <img class="img1" src="TRB 2.jpg" alt="" height="100px">
+          <img class="img1" src="TRB 3.jpg" alt="" height="100px">
+          <img class="img1" src="TRB 5.jpg" alt="" height="100px">
+          <img class="img1" src="TRB 6.jpg" alt="" height="100px">
+          <img class="img1" src="TRB 8.jpg" alt="" height="100px">
+          <img class="img1" src="TRB 9.jpg" alt="" height="100px">
+          <img class="img1" src="TRB 11.jpg" alt="" height="100px">
+          <img class="img1" src="TRB 12.jpg" alt="" height="100px">
+        </td>
+        <td>36 - 46</td>
+      </tr>
+      <tr>
+        <td>
+          <img class="img1" src="TRB 1.jpeg" alt="" height="100px">
+          <img class="img1" src="TRB 4.jpeg" alt="" height="100px">
+          <img class="img1" src="TRB 7.jpeg" alt="" height="100px">
+          <img class="img1" src="TRB 10.jpeg" alt="" height="100px">
+          <img class="img1" src="TRB 13.jpeg" alt="" height="100px">
+          <img class="img1" src="TRB 14.jpeg" alt="" height="100px">
+          <img class="img1" src="TRB 15.jpeg" alt="" height="100px">
+          <img class="img1" src="TRB 16.jpeg" alt="" height="100px">
+        </td>
+        <td>32 - 46</td>
+      </tr>
+      </table>
+  </section><hr>
+<!-- Over Size 210gsm -->
+  <section class="pricing" id="s2">
+    <ul><b><li><u><h2>Over Size 210gsm</h2></li></u></b></ul>
+      <table>
+        <tr>
+          <th>Colour</th>
+          <th>Size</th>
+        </tr>
+        <tr>
+          <td>
+            <img class="img1" src="OS 3.jpg" alt="" height="100px">
+            <img class="img1" src="OS 7.jpg" alt="" height="100px">
+            <img class="img1" src="OS 9.jpg" alt="" height="100px">
+            <img class="img1" src="OS 10.jpg" alt="" height="100px">
+          </td>
+          <td>42 - 50 <br>(S,M,L,XL,XXL)</td>
+        </tr>
+        <tr>
+          <td>
+            <img class="img1" src="OS 1.jpeg" alt="" height="100px">
+            <img class="img1" src="OS 2.jpeg" alt="" height="100px">
+            <img class="img1" src="OS 4.jpeg" alt="" height="100px">
+            <img class="img1" src="OS 5.jpeg" alt="" height="100px">
+            <img class="img1" src="OS 6.jpeg" alt="" height="100px">
+            <img class="img1" src="OS 8.jpeg" alt="" height="100px">
+            <img class="img1" src="OS 11.jpeg" alt="" height="100px">
+            <img class="img1" src="OS 12.jpeg" alt="" height="100px">
+            <img class="img1" src="OS 13.jpeg" alt="" height="100px">
+            <img class="img1" src="OS 14.jpeg" alt="" height="100px">
+            <img class="img1" src="OS 15.jpeg" alt="" height="100px">
+            <img class="img1" src="OS 16.jpeg" alt="" height="100px">
+            <img class="img1" src="OS 17.jpeg" alt="" height="100px">
+          </td>
+          <td>40 - 52 <br>(S,M,L,XL,XXL,3Xl,4XL)</td>
+        </tr>
+        </table>
+    </section>
+    <hr>
+    <!-- Over Size 240gsm -->
+  <section class="pricing" id="s3">
+    <ul><b><li><u><h2>Over Size 240gsm</h2></li></u></b></ul>
+      <table>
+        <tr>
+          <th>Colour</th>
+          <th>Size</th>
+        </tr>
+        <tr>
+          <td>
+            <img class="img1" src="OV 1.jpeg" alt="" height="100px">
+            <img class="img1" src="OV 2.jpeg" alt="" height="100px">
+            <img class="img1" src="OV 3.jpeg" alt="" height="100px">
+            <img class="img1" src="OV 4.jpeg" alt="" height="100px">
+            <img class="img1" src="OV 6.jpeg" alt="" height="100px">
+            <img class="img1" src="OV 7.jpeg" alt="" height="100px">
+            <img class="img1" src="OV 8.jpeg" alt="" height="100px">
+            <img class="img1" src="OV 9.jpeg" alt="" height="100px">
+            <img class="img1" src="OV 10.jpeg" alt="" height="100px">
+            <img class="img1" src="OV 11.jpeg" alt="" height="100px">
+            <img class="img1" src="OV 12.jpeg" alt="" height="100px">
+          </td>
+          <td>42 - 50 <br>(S,M,L,XL,XXL)</td>
+        </tr>
+        </table>
+    </section><hr>
+<!-- Pollo -->
+  <section class="pricing" id="s4">
+    <ul><b><li><u><h2>Pollo</h2></li></u></b></ul>
+      <table>
+        <tr>
+          <th>Colour</th>
+          <th>Size</th>
+        </tr>
+        <tr>
+          <td>
+            <img class="img1" src="Polo 7.jpg" alt="" height="100px">
+            <img class="img1" src="Polo 8.jpg" alt="" height="100px">
+            <img class="img1" src="Polo 9.jpg" alt="" height="100px">
+            <img class="img1" src="Polo 10.jpg" alt="" height="100px">
+            <img class="img1" src="Polo 11.jpg" alt="" height="100px">
+          </td>
+          <td>36 - 46</td>
+        </tr>
+        <tr>
+          <td>
+            <img class="img1" src="polo 1.jpeg" alt="" height="100px">
+            <img class="img1" src="polo 2.jpeg" alt="" height="100px">
+            <img class="img1" src="polo 3.jpeg" alt="" height="100px">
+            <img class="img1" src="polo 4.jpeg" alt="" height="100px">
+            <img class="img1" src="polo 5.jpeg" alt="" height="100px">
+            <img class="img1" src="polo 6.jpeg" alt="" height="100px">
+          </td>
+          <td>32 - 46</td>
+        </tr>
+        </table>
+    </section><hr>
+  <!-- Full T-Shirt -->
+  <section class="pricing" id="s5">
+    <ul><b><li><u><h2>Full T-Shirt</h2></li></u></b></ul>
+      <table>
+        <tr>
+          <th>Colour</th>
+          <th>Size</th>
+        </tr>
+        <tr>
+          <td>
+            <img class="img1" src="FS 1.jpeg" alt="" height="100px">
+            <img class="img1" src="FS 2.jpeg" alt="" height="100px">
+            <img class="img1" src="FS 3.jpeg" alt="" height="100px">
+            <img class="img1" src="FS 4.jpeg" alt="" height="100px">
+            <img class="img1" src="FS 5.jpeg" alt="" height="100px">
+            <img class="img1" src="FS 6.jpeg" alt="" height="100px">
+            <img class="img1" src="FS 7.jpeg" alt="" height="100px">
+            <img class="img1" src="FS 8.jpeg" alt="" height="100px">
+            <img class="img1" src="FS 9.jpeg" alt="" height="100px">
+            <img class="img1" src="FS 10.jpeg" alt="" height="100px">
+            <img class="img1" src="FS 12.jpeg" alt="" height="100px">
+            <img class="img1" src="FS 11.jpeg" alt="" height="100px">
+          </td>
+          <td>32 - 46</td>
+        </tr>
+        </table>
+    </section>
+    <hr>
+  <!-- Full T-Shirt -->
+  <section class="pricing" id="s6">
+    <ul><b><li><u><h2>Baggy</h2></li></u></b></ul>
+      <table>
+        <tr>
+          <th>Colour</th>
+          <th>Size</th>
+        </tr>
+        <tr>
+          <td>
+            <img class="img1" src="BG 1.jpeg" alt="" height="100px">
+            <img class="img1" src="BG 2.jpeg" alt="" height="100px">
+            <img class="img1" src="BG 3.jpeg" alt="" height="100px">
+            <img class="img1" src="BG 4.jpeg" alt="" height="100px">
+            <img class="img1" src="BG 5.jpeg" alt="" height="100px">
+            <img class="img1" src="BG 6.jpeg" alt="" height="100px">
+            <img class="img1" src="BG 7.jpeg" alt="" height="100px">
+          </td>
+          <td>40 - 52<br>(S,M,L,XL,XXL,3XL,4XL)</td>
+        </tr>
+        </table>
+    </section><hr>
+  <!-- Pricing Table -->
+  <section class="pricing">
+    <h2>Stickers</h2>
+    <table>
+      <tr>
+        <th>Size</th>
+        <th> Price</th>
+      </tr>
+      <tr>
+        <td>2x2 or 3x3</td>
+        <td>₹15</td>
+      </tr>
+      <tr>
+        <td>A4 or A3</td>
+        <td>₹60</td>
+      </tr>
+      <tr>
+        <td>15x21</td>
+        <td>₹80</td>
+      </tr>
+    </table>
+  </section>
+  <hr>
+  <main class="gallery1">
+    <div class="card1" id="d1">
+      <nav>
+        <div class="logo" id="logo1">
+        </div>
+    <div class="detals">
+      <b><pre>Name:- Krishna Kanta Bej</pre>
+      <pre>Mo.:- 933-927-0359</pre>
+      <pre>Gmail:- krishnakantabej05@gmail.com</pre>
+      <pre>Address:- Gazipur, Amta, Howrah 
+        Pin:- 711413</pre></b>
+    </div>
+    </div>
+
+    <div class="card1" id="d1" >
+      <nav>
+        <div class="logo" id="logo2">
+        </div>
+    <div class="detals">
+      <b><pre>Name:- Rupam Bej</pre>
+      <pre>Mo.:- 876-831-3734</pre>
+      <pre>Gmail:- rupambej33@gmail.com</pre>
+      <pre>Address:- Gazipur, Amta, Howrah 
+        Pin:- 711413</pre></b>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <h6>Address:- Gaziput, Amta2, Howrah Pin:- 711413</h6>
+    <h6>Mo.:- +816-768-2956</h6>
+    <h6>Gmail:- rupambej33@gmail.com</h6>
+    <h6>Insta:- @SHITRESS_OFFICICAL</h6>
+  </footer>
+
+</body>
+</html>
